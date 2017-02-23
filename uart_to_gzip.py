@@ -9,7 +9,7 @@ time_format = "{0:%Y}{0:%m}{0:%d}{0:%H}{0:%M}"
     
 def open_files(outpath,time):
     time_s = time_format.format(time)
-    fnall = outpath + time_s + '_all.bin.gz'
+    fnall = outpath + time_s + '.bin.gz'
     
     fall = gzip.open(fnall, 'wb')
     return fall
